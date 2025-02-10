@@ -3,71 +3,126 @@
     margin: 0;
     padding: 0;
 }
-html{
-    background-color: antiquewhite;
-}
-.container{
+.top-layer{
+    margin-top: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+    margin-bottom: 70px;
+
     
 }
-.shell {
-    width:310px;
-    background-color: white;
-    padding: 25px;
-    position: relative;
-    border-radius: 20px;
+
+.p-container{
+    margin-left: 25px;
+    width: 400px;
+}
+
+.top-child{
+    width: 62%;
+}
+
+.headerthick{
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+ p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
 
 }
-.shell p{
-    margin-top: 50px;
-    line-height: 25px;
+
+.top-layer span{
+    color: #009966;
+    font-weight: 800;
 }
-.shell h1{
-    text-align: center;
-    font-weight: 900;
+
+.bottom-layer{
+    background-color: #666666;
+    border-top: 8px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
 }
-.head{
-    background-color: #ff0095;
-    border-radius: 10px;
+
+.bottom-child{
+    width: 60%;
+    background-color: #FFFFFF;
     padding: 20px;
+    padding-top: 110px;
+    margin: 70px 0px;
+    border-bottom: 8px solid #999999 ;
+    position: relative;
+   
+}
+
+.bottom-child p {
+    font-weight: 500;
+}
+
+.yellow-card{
+    position: absolute;
+    top: 9px;
+    left: -9px;
+    background-color: #FFBF00;
+    padding: 0px 30px 15px 30px;
+    border-bottom: 8px solid #CC9900;
+}
+.yellow-card p{
+    font-weight: 800;
+    line-height: 28.8px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 768px){
+    
+        .top-child{
+            width: 100%;
+        }
+        .bottom-child{
+            width: 100%;
+        }
+    
     
 }
-.head-flex{
-    width:310px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -30px;
-    position: absolute;
-}
 
-@media only screen and (max-width: 360px){
-    .shell{
-        width: 100%;
+@media only screen and (max-width: 392px){
+    .p-container{
+        margin-left: 25px;
+        width: 350px;
     }
-    .head-flex{
-        width: 100%;
-        box-sizing: border-box;
-        left: 0;
-        justify-content: start;
+    .yellow-card{
+        /* width: 350px; */
+        /* padding: 0px 0px 15px 30px; */
     }
-    .head{width: 100%;}
-    .head h1{
-        font-size: 30px;
+    .yellow-card p{
+        width: 300px;
     }
+    
 
 
 }
 
-@media only screen and (max-width: 256px){
- .head-flex{
-    top: -60px;
- }
+
+@media only screen and (max-width: 352px){
+    .p-container{
+        margin-left: 25px;
+        width: 90%;
+    }
+    .yellow-card{
+        /* width: 350px; */
+        /* padding: 0px 0px 15px 30px; */
+    }
+    .yellow-card p{
+        width: 90%;
+    }
+    
 
 
 }
